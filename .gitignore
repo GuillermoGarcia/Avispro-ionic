@@ -23,6 +23,7 @@ www/
 node_modules/
 tmp/
 temp/
+src/app/credentials.ts
 platforms/
 plugins/
 plugins/android.json

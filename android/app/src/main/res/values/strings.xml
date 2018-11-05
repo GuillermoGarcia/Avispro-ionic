@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">avispro-ionic</string>
+    <string name="title_activity_main">avispro-ionic</string>
+    <string name="package_name">com.ulric.avispro</string>
+    <string name="fileprovider_authority">com.ulric.avispro.fileprovider</string>
+    <string name="custom_url_scheme">com.ulric.avispro</string>
+</resources>

@@ -1,5 +1,7 @@
 {
   "name": "avispro-ionic",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

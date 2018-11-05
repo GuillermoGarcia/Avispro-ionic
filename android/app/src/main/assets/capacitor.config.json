@@ -1,0 +1,6 @@
+{
+  "appId": "com.ulric.avispro",
+  "appName": "avispro-ionic",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
