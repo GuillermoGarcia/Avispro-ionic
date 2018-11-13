@@ -1,8 +1,9 @@
 export class Usuario {
 
-  idUsuario: String;
-  correo: String;
-  alias: String;
-  avatar?: String;
+  idUsuario: string;
+  correo: string;
+  alias: string;
+  avatar?: string;
+  personajes: Array<string>;
 
 }

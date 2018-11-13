@@ -18,8 +18,7 @@ export class AuthGuard implements CanActivate {
       return new Promise((resolve, reject) => {
         firebase.auth().onAuthStateChanged((usuario: firebase.User) => {
           if (usuario) {
-            this.usuarioService.saveUsuario(usuario.uid);
-            resolve(true);
+            this.usuarioService.loadUsuario(usuario.uid).then(() => resolve(true) );
           } else {
             console.log('Usuario no identificado.');
             this.router.navigate(['/login']);

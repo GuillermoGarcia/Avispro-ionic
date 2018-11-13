@@ -10,6 +10,7 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 import { Usuario } from '../classes/usuario';
+import { UsuarioService } from '../services/usuario.service';
 
 @Component({
   selector: 'app-login',
@@ -20,10 +21,11 @@ export class LoginPage implements OnInit {
 
   public loginForm: FormGroup;
   public loading: HTMLIonLoadingElement;
-  public usuario: Usuario;
+  // public usuario: Usuario;
 
   constructor( public loadingController: LoadingController, public alertController: AlertController,
-    private authService: AuthService, private router: Router, private formBuilder: FormBuilder) {
+    private authService: AuthService, private router: Router, private formBuilder: FormBuilder,
+    private usuarioService: UsuarioService) {
 
     this.loginForm = this.formBuilder.group({
       email: ['', Validators.compose([Validators.required, Validators.email])],
@@ -42,8 +44,8 @@ export class LoginPage implements OnInit {
       const email = loginForm.value.email;
       const password = loginForm.value.password;
       this.authService.loginUser(email, password).then((newUserCredential) => {
-        const uid = newUserCredential.user.uid;
-        firebase.firestore().doc(`/usuarios/${uid}`).get().then( doc => {
+        this.usuarioService.loadUsuario(newUserCredential.user.uid);
+        /*firebase.firestore().doc(`/usuarios/${uid}`).get().then( doc => {
           if (!doc.exists) {
             console.log('No such document!');
           } else {
@@ -52,7 +54,7 @@ export class LoginPage implements OnInit {
             this.usuario.alias = doc.data().alias;
             console.log('Document data:', this.usuario);
           }
-        }).catch(err =>  console.log('Error getting document', err));
+        }).catch(err =>  console.log('Error getting document', err));*/
         this.loading.dismiss().then(() => {
           this.router.navigateByUrl('home');
         });

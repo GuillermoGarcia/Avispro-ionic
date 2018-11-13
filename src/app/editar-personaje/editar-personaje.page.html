@@ -1,0 +1,124 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button color="light" defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+        <ion-title *ngIf="isNuevo">Crear Nueva Ficha de Personaje</ion-title>
+        <ion-title *ngIf="!isNuevo">Editar Ficha de {{personaje.nombre}}</ion-title>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Nombre</ion-label>
+    <ion-input clearInput [(ngModel)]="personaje.nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Raza</ion-label>
+    <ion-input clearInput [(ngModel)]="personaje.raza"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cultura</ion-label>
+    <ion-input clearInput [(ngModel)]="personaje.cultura"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Procedencia</ion-label>
+    <ion-input clearInput [(ngModel)]="personaje.procedencia"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Edad</ion-label>
+    <ion-input type="number" [(ngModel)]="personaje.edad"></ion-input>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3">
+        <div class="cgrid" (click)="editCaracteristica('For',personaje.caracteristicas.For)">
+          <div class="cname">For</div>
+          <div class="cvalue">{{personaje.caracteristicas.For[0]}}</div>
+          <div class="cvalue">{{personaje.caracteristicas.For[1]}}</div>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="cgrid">
+          <div class="cname">Con</div>
+          <div class="cvalue">{{personaje.caracteristicas.Con[0]}}</div>
+          <div class="cvalue">{{personaje.caracteristicas.Con[1]}}</div>
+        </div>
+        </ion-col>
+      <ion-col size="3">
+        <div class="cgrid">
+          <div class="cname">Agi</div>
+          <div class="cvalue">{{personaje.caracteristicas.Agi[0]}}</div>
+          <div class="cvalue">{{personaje.caracteristicas.Agi[1]}}</div>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="cgrid">
+          <div class="cname">Des</div>
+          <div class="cvalue">{{personaje.caracteristicas.Des[0]}}</div>
+          <div class="cvalue">{{personaje.caracteristicas.Des[1]}}</div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">
+        <div class="cgrid">
+          <div class="cname">Ref</div>
+          <div class="cvalue">{{personaje.caracteristicas.Ref[0]}}</div>
+          <div class="cvalue">{{personaje.caracteristicas.Ref[1]}}</div>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="cgrid">
+          <div class="cname">Inte</div>
+          <div class="cvalue">{{personaje.caracteristicas.Inte[0]}}</div>
+          <div class="cvalue">{{personaje.caracteristicas.Inte[1]}}</div>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="cgrid">
+          <div class="cname">Mem</div>
+          <div class="cvalue">{{personaje.caracteristicas.Mem[0]}}</div>
+          <div class="cvalue">{{personaje.caracteristicas.Mem[1]}}</div>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="cgrid">
+          <div class="cname">Per</div>
+          <div class="cvalue">{{personaje.caracteristicas.Per[0]}}</div>
+          <div class="cvalue">{{personaje.caracteristicas.Per[1]}}</div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">
+        <div class="cgrid">
+        <div class="cname">Pod</div>
+        <div class="cvalue">{{personaje.caracteristicas.Pod[0]}}</div>
+        <div class="cvalue">{{personaje.caracteristicas.Pod[1]}}</div>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="cgrid">
+          <div class="cname">Vol</div>
+          <div class="cvalue">{{personaje.caracteristicas.Vol[0]}}</div>
+          <div class="cvalue">{{personaje.caracteristicas.Vol[1]}}</div>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="cgrid">
+          <div class="cname">Emp</div>
+          <div class="cvalue">{{personaje.caracteristicas.Emp[0]}}</div>
+          <div class="cvalue">{{personaje.caracteristicas.Emp[1]}}</div>
+        </div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="cgrid">
+          <div class="cname">Apa</div>
+          <div class="cvalue">{{personaje.caracteristicas.Apa[0]}}</div>
+          <div class="cvalue">{{personaje.caracteristicas.Apa[1]}}</div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

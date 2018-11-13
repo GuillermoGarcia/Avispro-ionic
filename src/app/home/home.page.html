@@ -1,12 +1,29 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      {{ usuarioService.usuario.alias }}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+<ion-content padding>  
+  <ion-list lines="none">
+    <ion-item *ngFor="let personaje of personajeService.personajes" (click)="goEdit([personaje.idPersonaje])">
+      <ion-avatar slot="start">
+        <img [src] = "(personaje.avatar !== '') ? personaje.avatar : './../../assets/icon/avatar_default.jpg'">
+      </ion-avatar>
+      <div>
+        <ion-label>{{ personaje.nombre }}</ion-label>
+        <ion-label>{{ personaje.raza }} ({{ personaje.cultura }})</ion-label>
+      </div>
+      <div class="nvl"><ion-label>Nivel {{ personaje.nivel }}</ion-label></div>
+    </ion-item>
+  </ion-list>
 </ion-content>
+<ion-footer>
+    <ion-toolbar>
+      <ion-buttons>
+        <ion-button class="np" href="/editar-personaje"  routerDirection="forward">Nuevo Personaje</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>

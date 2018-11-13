@@ -1,1 +1,23 @@
+ion-content *{ font-family: 'Overseer'; font-size: 1.1em; }
 
+ion-item {
+  --background: #82a7d6;
+  --border-color: #fef265;
+  --border-radius: 20px;
+  --border-style: solid;
+  --border-width: 5px !important;
+  margin-bottom: 10px;
+}
+
+ion-avatar { min-height: 64px; min-width: 64px; }
+
+div.nvl{ height: 50%; position: absolute; right: 0px; top: 0px; }
+ion-button.np {
+  --background: #447ab9;
+  --border-color: #feeed4;
+  --border-radius: 15px;
+  --border-style: solid;
+  --border-width: 3px !important;
+  --color: #fff;
+  margin: auto;
+}

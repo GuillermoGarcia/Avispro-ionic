@@ -1,11 +1,11 @@
 export class Habilidad {
 
-  idHabilidad: number;
-  nombre: String;
-  bonusPrincipal: String[];
-  bonusSecundario: String[];
-  descripcion: String;
+  idHabilidad: string;
+  nombre: string;
+  bonusPrincipal?: string[];
+  bonusSecundario?: string[];
+  descripcion: string;
   tipo: number;
-  combate: boolean;
+  combate = false;
 
 }

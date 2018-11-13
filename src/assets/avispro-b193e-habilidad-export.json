@@ -1,0 +1,1447 @@
+{
+"habilidades":  [ {
+  "bonusPrincipal" : [ "INT", "MEM" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 1,
+  "nombre" : "Actualidad",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP", "POD" ],
+  "bonusSecundario" : [ "VOL", "POD", "VOL" ],
+  "combate" : false,
+  "idHabilidad" : 2,
+  "nombre" : "Adiestrar",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER", "EMP" ],
+  "bonusSecundario" : [ "INT", "EMP", "POD" ],
+  "combate" : false,
+  "idHabilidad" : 3,
+  "nombre" : "Agenciarse",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "PER", "INT", "FOR" ],
+  "combate" : false,
+  "idHabilidad" : 4,
+  "nombre" : "Armería",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 5,
+  "nombre" : "Arquería",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 6,
+  "nombre" : "Arquitectura",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "PER", "EMP", "FOR" ],
+  "combate" : false,
+  "idHabilidad" : 7,
+  "nombre" : "Artesanado",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "DES", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 8,
+  "nombre" : "Audiovisuales",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP", "INT" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 9,
+  "nombre" : "Bromear",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM", "INT" ],
+  "bonusSecundario" : [ "VOL", "POD" ],
+  "combate" : false,
+  "idHabilidad" : 10,
+  "nombre" : "Burocracia",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "INT", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 11,
+  "nombre" : "Cabuyería",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP" ],
+  "bonusSecundario" : [ "PER", "CON" ],
+  "combate" : false,
+  "idHabilidad" : 12,
+  "nombre" : "Cantar",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "FOR" ],
+  "bonusSecundario" : [ "CON", "AGI" ],
+  "combate" : false,
+  "idHabilidad" : 13,
+  "nombre" : "Cargar – Portear",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "INT", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 14,
+  "nombre" : "Cerraduras",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "INT", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 15,
+  "nombre" : "Chapuzas",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP", "POD" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 16,
+  "nombre" : "Charlatanería",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "DES" ],
+  "combate" : false,
+  "idHabilidad" : 17,
+  "nombre" : "Cocina",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "VOL" ],
+  "bonusSecundario" : [ "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 18,
+  "nombre" : "Concentración",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES", "AGI" ],
+  "bonusSecundario" : [ "PER", "REF" ],
+  "combate" : false,
+  "idHabilidad" : 19,
+  "nombre" : "Conducción",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT", "MEM", "DES" ],
+  "bonusSecundario" : [ "INT", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 20,
+  "nombre" : "Conocimiento alquimia",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT", "MEM" ],
+  "bonusSecundario" : [ "EMP", "POD" ],
+  "combate" : false,
+  "idHabilidad" : 21,
+  "nombre" : "Conocimiento animal",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT", "MEM", "EMP" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 22,
+  "nombre" : "Conocimiento antropología",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "PER", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 23,
+  "nombre" : "Conocimiento arqueología",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM", "PER" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 24,
+  "nombre" : "Conocimiento astronomía",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM", "EMP" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 25,
+  "nombre" : "Conocimiento bellas artes",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM", "INT" ],
+  "bonusSecundario" : [ "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 26,
+  "nombre" : "Conocimiento biología",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT", "PER" ],
+  "bonusSecundario" : [ "MEM" ],
+  "combate" : false,
+  "idHabilidad" : 27,
+  "nombre" : "Conocimiento clima",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 28,
+  "nombre" : "Conocimiento cultura general",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT", "MEM", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 29,
+  "nombre" : "Conocimiento criminalística",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "POD" ],
+  "combate" : false,
+  "idHabilidad" : 30,
+  "nombre" : "Conocimiento demonología",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM", "INT", "EMP " ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 31,
+  "nombre" : "Conocimiento ecología",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM", "DES" ],
+  "bonusSecundario" : [ "PER", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 32,
+  "nombre" : "Conocimiento farmacología",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 33,
+  "nombre" : "Conocimiento física",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 34,
+  "nombre" : "Conocimiento geografía",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "PER", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 35,
+  "nombre" : "Conocimiento geología",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "EMP", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 36,
+  "nombre" : "Conocimiento historia",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "combate" : false,
+  "idHabilidad" : 37,
+  "nombre" : "Conocimiento leyendas",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "combate" : false,
+  "idHabilidad" : 38,
+  "nombre" : "Conocimiento leyes",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "MEM", "PER", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 39,
+  "nombre" : "Conocimiento lingüística",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 40,
+  "nombre" : "Conocimiento literatura",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "POD", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 41,
+  "nombre" : "Conocimiento magia",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "MEM" ],
+  "combate" : false,
+  "idHabilidad" : 42,
+  "nombre" : "Conocimiento matemáticas",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT", "PER", "DES" ],
+  "bonusSecundario" : [ "MEM", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 43,
+  "nombre" : "Conocimiento medicina",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT", "MEM" ],
+  "bonusSecundario" : [ "PER", "POD" ],
+  "combate" : false,
+  "idHabilidad" : 44,
+  "nombre" : "Conocimiento mineral",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "POD", "MEM" ],
+  "combate" : false,
+  "idHabilidad" : 45,
+  "nombre" : "Conocimiento necromancia",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "POD", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 46,
+  "nombre" : "Conocimiento ocultismo",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT", "MEM" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 47,
+  "nombre" : "Conocimiento plantas",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "EMP", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 48,
+  "nombre" : "Conocimiento psicología acad",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM", "INT", "DES" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 49,
+  "nombre" : "Conocimiento química",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 50,
+  "nombre" : "Conocimiento red",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM", "EMP" ],
+  "bonusSecundario" : [ "PER", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 51,
+  "nombre" : "Conocimiento sociología",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "POD", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 52,
+  "nombre" : "Conocimiento teología",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 53,
+  "nombre" : "Contabilidad",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "AGI" ],
+  "bonusSecundario" : [ "VOL" ],
+  "combate" : false,
+  "idHabilidad" : 54,
+  "nombre" : "Contorsionismo",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP" ],
+  "bonusSecundario" : [ "INT", "VOL", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 55,
+  "nombre" : "Modales",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP", "POD" ],
+  "bonusSecundario" : [ "INT", "POD" ],
+  "combate" : false,
+  "idHabilidad" : 56,
+  "nombre" : "Crédito",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 57,
+  "nombre" : "Criptografía",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "AGI" ],
+  "bonusSecundario" : [ "REF", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 58,
+  "nombre" : "Danza",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "EMP", "POD" ],
+  "combate" : false,
+  "idHabilidad" : 59,
+  "nombre" : "Demonología",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "EMP", "DES" ],
+  "combate" : false,
+  "idHabilidad" : 60,
+  "nombre" : "Dibujar",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 61,
+  "nombre" : "Diseño sistemas",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "MEM", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 62,
+  "nombre" : "Documentación",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "VOL" ],
+  "bonusSecundario" : [ "-PER", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 63,
+  "nombre" : "Dormirse",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER", "DES" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 64,
+  "nombre" : "Electrónica",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP", "POD" ],
+  "bonusSecundario" : [ "INT", "VOL" ],
+  "combate" : false,
+  "idHabilidad" : 65,
+  "nombre" : "Enseñar",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP" ],
+  "bonusSecundario" : [ "POD", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 66,
+  "nombre" : "Entonar",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "VOL", "AGI" ],
+  "bonusSecundario" : [ "PER", "INT", "REF" ],
+  "combate" : false,
+  "idHabilidad" : 67,
+  "nombre" : "Esconderse",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 68,
+  "nombre" : "Estilismo",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER", "POD" ],
+  "combate" : false,
+  "idHabilidad" : 69,
+  "nombre" : "Estrategia",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT", "DES" ],
+  "bonusSecundario" : [ "PER", "VOL" ],
+  "combate" : false,
+  "idHabilidad" : 70,
+  "nombre" : "Explosivos",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER", "DES" ],
+  "bonusSecundario" : [ "INT", "MEM" ],
+  "combate" : false,
+  "idHabilidad" : 71,
+  "nombre" : "Falsificación",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP", "POD" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 72,
+  "nombre" : "Fingir",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "VOL" ],
+  "bonusSecundario" : [ "CON" ],
+  "combate" : false,
+  "idHabilidad" : 73,
+  "nombre" : "Firmeza",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "FOR" ],
+  "combate" : false,
+  "idHabilidad" : 74,
+  "nombre" : "Herrería",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "EMP", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 75,
+  "nombre" : "Idiomas hablados",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "MEM", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 76,
+  "nombre" : "Idiomas escritos",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 77,
+  "nombre" : "Informática",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT", "POD", "EMP " ],
+  "bonusSecundario" : [ "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 78,
+  "nombre" : "Interrogar - Entrevista",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "POD", "FOR" ],
+  "bonusSecundario" : [ "VOL" ],
+  "combate" : false,
+  "idHabilidad" : 79,
+  "nombre" : "Intimidar",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT", "POD" ],
+  "bonusSecundario" : [ "EMP", "DES" ],
+  "combate" : false,
+  "idHabilidad" : 80,
+  "nombre" : "Juego",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "INT", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 81,
+  "nombre" : "Leer labios",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "POD", "EMP" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 82,
+  "nombre" : "Liderazgo",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES", "REF" ],
+  "bonusSecundario" : [ "AGI" ],
+  "combate" : false,
+  "idHabilidad" : 83,
+  "nombre" : "Malabares",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "PER", "REF" ],
+  "combate" : false,
+  "idHabilidad" : 84,
+  "nombre" : "Maquinaria pesada",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "EMP", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 85,
+  "nombre" : "Masaje",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "PER", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 86,
+  "nombre" : "Mecánica",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP" ],
+  "bonusSecundario" : [ "VOL", "INT", "–PER" ],
+  "combate" : false,
+  "idHabilidad" : 87,
+  "nombre" : "Meditación",
+  "tipo" : 3
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER", "MEM" ],
+  "combate" : false,
+  "idHabilidad" : 88,
+  "nombre" : "Moneda",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP", "AGI" ],
+  "bonusSecundario" : [ "POD" ],
+  "combate" : false,
+  "idHabilidad" : 89,
+  "nombre" : "Monta",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "AGI" ],
+  "bonusSecundario" : [ "DES", "REF" ],
+  "combate" : false,
+  "idHabilidad" : 90,
+  "nombre" : "Motocicleta",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "AGI", "PER" ],
+  "bonusSecundario" : [ "REF", "FOR", "CON" ],
+  "combate" : false,
+  "idHabilidad" : 91,
+  "nombre" : "Movimiento",
+  "tipo" : 4
+}, {
+  "bonusPrincipal" : [ "FOR" ],
+  "bonusSecundario" : [ "CON", "DES" ],
+  "combate" : false,
+  "idHabilidad" : 92,
+  "nombre" : "Musculación",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP", "DES" ],
+  "bonusSecundario" : [ "INT", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 93,
+  "nombre" : "Música",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "AGI" ],
+  "bonusSecundario" : [ "CON", "FOR" ],
+  "combate" : false,
+  "idHabilidad" : 94,
+  "nombre" : "Nadar",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "POD", "MEM" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 95,
+  "nombre" : "Necromancia",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 96,
+  "nombre" : "Ocultar",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 97,
+  "nombre" : "Oir",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "EMP", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 98,
+  "nombre" : "Oler",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP", "POD" ],
+  "bonusSecundario" : [ "INT", "CON" ],
+  "combate" : false,
+  "idHabilidad" : 99,
+  "nombre" : "Oratoria",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 100,
+  "nombre" : "Orientación",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER", "DES" ],
+  "bonusSecundario" : [ "INT", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 101,
+  "nombre" : "Palpar",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP", "INT" ],
+  "bonusSecundario" : [ "POD" ],
+  "combate" : false,
+  "idHabilidad" : 102,
+  "nombre" : "Persuadir",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "PER", "REF" ],
+  "combate" : false,
+  "idHabilidad" : 103,
+  "nombre" : "Pilotar",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES", "EMP" ],
+  "bonusSecundario" : [ "INT", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 104,
+  "nombre" : "Primeros auxilios",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 105,
+  "nombre" : "Programación",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 106,
+  "nombre" : "Psicología barata",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 107,
+  "nombre" : "Rastreo",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "DES", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 108,
+  "nombre" : "Reciclaje",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 109,
+  "nombre" : "Redacción",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "EMP", "POD" ],
+  "combate" : false,
+  "idHabilidad" : 110,
+  "nombre" : "Regateo",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "FOR" ],
+  "bonusSecundario" : [ "DES", "AGI" ],
+  "combate" : false,
+  "idHabilidad" : 111,
+  "nombre" : "Remado",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "CON" ],
+  "bonusSecundario" : [ "AGI", "VOL" ],
+  "combate" : false,
+  "idHabilidad" : 112,
+  "nombre" : "Resistencia",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "VOL" ],
+  "combate" : false,
+  "idHabilidad" : 113,
+  "nombre" : "Ritos",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "REF", "PER", "VOL" ],
+  "combate" : false,
+  "idHabilidad" : 114,
+  "nombre" : "Robar bolsas",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "DES", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 115,
+  "nombre" : "Robótica – Cibernética",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP", "PER" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 116,
+  "nombre" : "Rumores",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 117,
+  "nombre" : "Saborear",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP", "POD" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 118,
+  "nombre" : "Seducir",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "INT", "VOL" ],
+  "combate" : false,
+  "idHabilidad" : 119,
+  "nombre" : "Seguimiento",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "POD" ],
+  "bonusSecundario" : [ "EMP", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 120,
+  "nombre" : "Sentir",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "VOL", "AGI" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 121,
+  "nombre" : "Sigilo",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER", "INT" ],
+  "bonusSecundario" : [ "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 122,
+  "nombre" : "Supervivencia",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "INT", "PER" ],
+  "combate" : false,
+  "idHabilidad" : 123,
+  "nombre" : "Tallado",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER", "MEM" ],
+  "combate" : false,
+  "idHabilidad" : 124,
+  "nombre" : "Tasar",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "EMP" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 125,
+  "nombre" : "Terapia",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "INT", "POD", "MEM" ],
+  "bonusSecundario" : [ "MEM", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 126,
+  "nombre" : "Teología",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "FOR" ],
+  "bonusSecundario" : [ "AGI" ],
+  "combate" : false,
+  "idHabilidad" : 127,
+  "nombre" : "Tirapuertas",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "INT", "PER", "VOL" ],
+  "combate" : false,
+  "idHabilidad" : 128,
+  "nombre" : "Trampeo",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER", "INT" ],
+  "bonusSecundario" : [ "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 129,
+  "nombre" : "Urbanita",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "POD" ],
+  "bonusSecundario" : [ "INT", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 130,
+  "nombre" : "Usar objetos",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 131,
+  "nombre" : "Ver",
+  "tipo" : 1
+}, {
+  "combate" : false,
+  "idHabilidad" : 132,
+  "nombre" : "Abrir",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 133,
+  "nombre" : "Alcohol",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 134,
+  "nombre" : "Ardid",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "POD", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 135,
+  "nombre" : "Arengar",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 136,
+  "nombre" : "Balística",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "MEM", "INT" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 137,
+  "nombre" : "Botánica",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "AGI" ],
+  "bonusSecundario" : [ "CON" ],
+  "combate" : false,
+  "idHabilidad" : 138,
+  "nombre" : "Buceo",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "VOL", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 139,
+  "nombre" : "Buscar",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "PER", "DES" ],
+  "combate" : false,
+  "idHabilidad" : 140,
+  "nombre" : "Caja fuerte",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 141,
+  "nombre" : "Camuflaje",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "combate" : false,
+  "idHabilidad" : 142,
+  "nombre" : "Carreta",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 143,
+  "nombre" : "Chef",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 144,
+  "nombre" : "Cirugía",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "EMP", "POD" ],
+  "combate" : false,
+  "idHabilidad" : 145,
+  "nombre" : "Contactos",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 146,
+  "nombre" : "Coral",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "DES " ],
+  "bonusSecundario" : [ "PER", "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 147,
+  "nombre" : "Cosmética",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "POD" ],
+  "combate" : false,
+  "idHabilidad" : 148,
+  "nombre" : "Demagogia",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "POD" ],
+  "combate" : false,
+  "idHabilidad" : 149,
+  "nombre" : "Demoliciones",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "REF", "VOL", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 150,
+  "nombre" : "Desactivar",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "EMP", "POD" ],
+  "combate" : false,
+  "idHabilidad" : 151,
+  "nombre" : "Didáctica",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "bonusSecundario" : [ "MEM" ],
+  "combate" : false,
+  "idHabilidad" : 152,
+  "nombre" : "Diplomacia",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 153,
+  "nombre" : "Disfraz",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 154,
+  "nombre" : "Emboscada",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 155,
+  "nombre" : "Equitación",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "AGI" ],
+  "combate" : false,
+  "idHabilidad" : 156,
+  "nombre" : "Escapismo",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "VOL", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 157,
+  "nombre" : "Escucha",
+  "tipo" : 2
+}, {
+  "bonusSecundario" : [ "MEM" ],
+  "combate" : false,
+  "idHabilidad" : 158,
+  "nombre" : "Etiqueta",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 159,
+  "nombre" : "Etología",
+  "tipo" : 2
+}, {
+  "bonusSecundario" : [ "POD" ],
+  "combate" : false,
+  "idHabilidad" : 160,
+  "nombre" : "Finanzas",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "VOL", "INT" ],
+  "combate" : false,
+  "idHabilidad" : 161,
+  "nombre" : "Forrajeo",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "PER", "DES" ],
+  "bonusSecundario" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 162,
+  "nombre" : "Gemas",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 163,
+  "nombre" : "Grutas;espeleología",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "MEM", "DES" ],
+  "combate" : false,
+  "idHabilidad" : 164,
+  "nombre" : "Herboristería",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 165,
+  "nombre" : "Hongos",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 166,
+  "nombre" : "Idioma animal",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "EMP", "POD" ],
+  "combate" : false,
+  "idHabilidad" : 167,
+  "nombre" : "Imitación",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "INT" ],
+  "combate" : false,
+  "idHabilidad" : 168,
+  "nombre" : "Ingeniería",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 169,
+  "nombre" : "Laboratorio",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 170,
+  "nombre" : "Logística",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 171,
+  "nombre" : "Mapas",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "MEM" ],
+  "bonusSecundario" : [ "PER" ],
+  "combate" : false,
+  "idHabilidad" : 172,
+  "nombre" : "Micología",
+  "tipo" : 2
+}, {
+  "bonusPrincipal" : [ "MEM", "INT" ],
+  "bonusSecundario" : [ "EMP" ],
+  "combate" : false,
+  "idHabilidad" : 173,
+  "nombre" : "Zoología",
+  "tipo" : 2
+}, {
+  "combate" : true,
+  "idHabilidad" : 174,
+  "nombre" : "Armas Pesadas",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES", "AGI", "FOR" ],
+  "bonusSecundario" : [ "REF", "FOR", "AGI" ],
+  "combate" : true,
+  "idHabilidad" : 175,
+  "nombre" : "Pelea",
+  "tipo" : 1
+}, {
+  "combate" : true,
+  "idHabilidad" : 176,
+  "nombre" : "Artes Marciales",
+  "tipo" : 3
+}, {
+  "bonusPrincipal" : [ "AGI", "REF" ],
+  "bonusSecundario" : [ "POD" ],
+  "combate" : true,
+  "idHabilidad" : 177,
+  "nombre" : "Esquiva",
+  "tipo" : 1
+}, {
+  "combate" : true,
+  "idHabilidad" : 178,
+  "nombre" : "Acrobacias",
+  "tipo" : 2
+}, {
+  "combate" : true,
+  "idHabilidad" : 179,
+  "nombre" : "Volteretas",
+  "tipo" : 3
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "REF", "AGI", "POD", "FOR" ],
+  "combate" : true,
+  "idHabilidad" : 180,
+  "nombre" : "Parada 1 Mano",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "REF", "AGI", "POD", "FOR" ],
+  "combate" : true,
+  "idHabilidad" : 181,
+  "nombre" : "Parada 2 Mano",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "REF", "AGI", "POD", "FOR" ],
+  "combate" : true,
+  "idHabilidad" : 182,
+  "nombre" : "Parada Escudo",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "REF", "AGI", "POD" ],
+  "combate" : true,
+  "idHabilidad" : 183,
+  "nombre" : "Desvio",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "REF", "AGI", "FOR" ],
+  "combate" : true,
+  "idHabilidad" : 184,
+  "nombre" : "Golpe 1 Mano",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "REF", "AGI", "FOR", "INT" ],
+  "combate" : true,
+  "idHabilidad" : 185,
+  "nombre" : "Sesgo 1 Mano",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "REF", "AGI", "FOR", "PER" ],
+  "combate" : true,
+  "idHabilidad" : 186,
+  "nombre" : "Punta 1 Mano",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES", "AGI" ],
+  "bonusSecundario" : [ "REF", "AGI", "FOR" ],
+  "combate" : true,
+  "idHabilidad" : 187,
+  "nombre" : "Golpe 2 Mano",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES", "AGI" ],
+  "bonusSecundario" : [ "REF", "AGI", "FOR", "INT" ],
+  "combate" : true,
+  "idHabilidad" : 188,
+  "nombre" : "Sesgo 2 Mano",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES", "AGI" ],
+  "bonusSecundario" : [ "REF", "AGI", "FOR", "PER" ],
+  "combate" : true,
+  "idHabilidad" : 189,
+  "nombre" : "Punta 2 Mano",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "FOR" ],
+  "bonusSecundario" : [ "REF", "AGI", "DES" ],
+  "combate" : true,
+  "idHabilidad" : 190,
+  "nombre" : "Envite",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "DES", "AGI", "REF" ],
+  "combate" : true,
+  "idHabilidad" : 191,
+  "nombre" : "Proyectiles",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "REF", "AGI", "FOR", "PER" ],
+  "combate" : true,
+  "idHabilidad" : 192,
+  "nombre" : "Arrojar",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES" ],
+  "bonusSecundario" : [ "REF", "AGI", "FOR", "PER", "INT" ],
+  "combate" : true,
+  "idHabilidad" : 193,
+  "nombre" : "Atrape 1 Mano",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES", "AGI" ],
+  "bonusSecundario" : [ "REF", "AGI", "FOR", "PER", "INT" ],
+  "combate" : true,
+  "idHabilidad" : 194,
+  "nombre" : "Atrape 2 Mano",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "DES", "AGI", "REF" ],
+  "combate" : true,
+  "idHabilidad" : 195,
+  "nombre" : "Disparo 1 Mano",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "REF", "FOR", "AGI" ],
+  "combate" : true,
+  "idHabilidad" : 196,
+  "nombre" : "Disparo 2 Manos",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER" ],
+  "bonusSecundario" : [ "REF", "FOR", "AGI" ],
+  "combate" : true,
+  "idHabilidad" : 197,
+  "nombre" : "Disparo Armas Pesadas",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "PER", "INT" ],
+  "bonusSecundario" : [ "REF", "POD" ],
+  "combate" : true,
+  "idHabilidad" : 198,
+  "nombre" : "Disparo Mech",
+  "tipo" : 1
+}, {
+  "bonusPrincipal" : [ "DES", "INT" ],
+  "bonusSecundario" : [ "PER", "REF", "AGI" ],
+  "combate" : false,
+  "idHabilidad" : 199,
+  "nombre" : "Pilotar Mech",
+  "tipo" : 1
+}, {
+  "combate" : false,
+  "idHabilidad" : 200,
+  "nombre" : "Mech Ligero",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 201,
+  "nombre" : "Mech Medio",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 202,
+  "nombre" : "Mech Pesado",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 203,
+  "nombre" : "Mech Asalto",
+  "tipo" : 2
+}, {
+  "combate" : true,
+  "idHabilidad" : 204,
+  "nombre" : "Armas Láser",
+  "tipo" : 2
+}, {
+  "combate" : true,
+  "idHabilidad" : 205,
+  "nombre" : "Armas Balísticas",
+  "tipo" : 2
+}, {
+  "combate" : true,
+  "idHabilidad" : 206,
+  "nombre" : "Armas de Misiles",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 207,
+  "nombre" : "Táctica",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 208,
+  "nombre" : "Correr",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 209,
+  "nombre" : "Trepar",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 210,
+  "nombre" : "Marcha",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 211,
+  "nombre" : "Nadar",
+  "tipo" : 2
+}, {
+  "combate" : false,
+  "idHabilidad" : 212,
+  "nombre" : "Equilibrio",
+  "tipo" : 2
+}, {
+  "combate" : true,
+  "idHabilidad" : 213,
+  "nombre" : "Arma Corta",
+  "tipo" : 2
+}, {
+  "combate" : true,
+  "idHabilidad" : 214,
+  "nombre" : "Escopeta",
+  "tipo" : 2
+}, {
+  "combate" : true,
+  "idHabilidad" : 215,
+  "nombre" : "Subfusil",
+  "tipo" : 2
+}, {
+  "combate" : true,
+  "idHabilidad" : 216,
+  "nombre" : "Fusil Asalto",
+  "tipo" : 2
+}, {
+  "combate" : true,
+  "idHabilidad" : 217,
+  "nombre" : "Rifles",
+  "tipo" : 2
+}, {
+  "combate" : true,
+  "idHabilidad" : 218,
+  "nombre" : "Ametralladora",
+  "tipo" : 2
+}, {
+  "combate" : true,
+  "idHabilidad" : 219,
+  "nombre" : "Ballestas",
+  "tipo" : 2
+} ]
+}

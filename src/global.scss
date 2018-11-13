@@ -10,3 +10,33 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+@font-face {
+  font-family: 'Overseer';
+  src: url('./assets/fonts/Overseer.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Overseer_Italic';
+  src: url('./assets/fonts/Overseer_Italic.otf') format('otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Overseer_Bold';
+  src: url('./assets/fonts/Overseer_Bold.otf') format('otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Overseer Italic Bold';
+  src: url('./assets/fonts/Overseer_Bold_Italic.otf') format('otf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+ion-title { --color: #fff; font-family: 'Overseer'; font-size: 1.4em; text-align: center; }
+button.input-clear-icon { background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'><polygon%20fill='var(--ion-text-color-step-400,%20%23ffffff)'%20points='405,136.798%20375.202,107%20256,226.202%20136.798,107%20107,136.798%20226.202,256%20107,375.202%20136.798,405%20256,285.798%20375.202,405%20405,375.202%20285.798,256'/></svg>"); }

@@ -1,0 +1,7 @@
+ion-content, ion-label, ion-input{ --color: #fff !important; }
+ion-input { --ion-text-color-step-400: white !important; }
+
+div.cgrid{ display: table; width: 100%; }
+div.cname, div.cvalue { font-size: 1.1em; text-align: center; }
+div.cname { background-color: #82a7d6; border:1px solid #feeed4; display: table-caption; padding: 4px 0; }
+div.cvalue { background-color: #fef265; color: #447ab9; display: table-row; height: 24px; }
