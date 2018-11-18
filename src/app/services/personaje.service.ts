@@ -15,13 +15,16 @@ export class PersonajeService {
 
   constructor(private usuarioService: UsuarioService) { this.loadPersonaje().then(() => console.log() ); }
 
+  private c = { Agi: [0, 0], Apa: [0, 0], Con: [0, 0], Des: [0, 0], Emp: [0, 0], For: [0, 0],
+               Inte: [0, 0], Mem: [0, 0], Ref: [0, 0], Per: [0, 0], Pod: [0, 0], Vol: [0, 0]};
+
   nuevoPersonaje(): Personaje {
     const p = {
       avatar: '',
-      caracteristicas:  null,
+      caracteristicas:  this.c,
       cultura: '',
       edad:  0,
-      habilidades:  null,
+      habilidades:  [],
       idPersonaje: '',
       nivel: 1,
       nombre: '',
@@ -65,10 +68,10 @@ export class PersonajeService {
   savePersonaje(p: Personaje) {
     firebase.firestore().doc(`/personajes/${p.idPersonaje}`).set({
       avatar: (p.avatar !== '') ? p.avatar : '',
-      caracteristicas: (p.caracteristicas !== undefined) ? p.caracteristicas : null,
+      caracteristicas: (p.caracteristicas !== undefined) ? p.caracteristicas : this.c,
       cultura: (p.cultura !== '') ? p.cultura : '',
       edad: (p.edad !== 0) ? p.edad : 0,
-      habilidades: (p.habilidades !== undefined) ? p.habilidades : null,
+      habilidades: (p.habilidades !== undefined) ? p.habilidades : [],
       idPersonaje: p.idPersonaje,
       nivel: (p.nivel !== 0) ? p.nivel : 0,
       nombre: p.nombre,

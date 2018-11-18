@@ -39,21 +39,21 @@
         </div>
       </ion-col>
       <ion-col size="3">
-        <div class="cgrid">
+        <div class="cgrid" (click)="editCaracteristica('Con',personaje.caracteristicas.Con)">
           <div class="cname">Con</div>
           <div class="cvalue">{{personaje.caracteristicas.Con[0]}}</div>
           <div class="cvalue">{{personaje.caracteristicas.Con[1]}}</div>
         </div>
         </ion-col>
       <ion-col size="3">
-        <div class="cgrid">
+        <div class="cgrid" (click)="editCaracteristica('Agi',personaje.caracteristicas.Agi)">
           <div class="cname">Agi</div>
           <div class="cvalue">{{personaje.caracteristicas.Agi[0]}}</div>
           <div class="cvalue">{{personaje.caracteristicas.Agi[1]}}</div>
         </div>
       </ion-col>
       <ion-col size="3">
-        <div class="cgrid">
+        <div class="cgrid" (click)="editCaracteristica('Des',personaje.caracteristicas.Des)">
           <div class="cname">Des</div>
           <div class="cvalue">{{personaje.caracteristicas.Des[0]}}</div>
           <div class="cvalue">{{personaje.caracteristicas.Des[1]}}</div>
@@ -62,28 +62,28 @@
     </ion-row>
     <ion-row>
       <ion-col size="3">
-        <div class="cgrid">
+        <div class="cgrid" (click)="editCaracteristica('Ref',personaje.caracteristicas.Ref)">
           <div class="cname">Ref</div>
           <div class="cvalue">{{personaje.caracteristicas.Ref[0]}}</div>
           <div class="cvalue">{{personaje.caracteristicas.Ref[1]}}</div>
         </div>
       </ion-col>
       <ion-col size="3">
-        <div class="cgrid">
+        <div class="cgrid" (click)="editCaracteristica('Inte',personaje.caracteristicas.Inte)">
           <div class="cname">Inte</div>
           <div class="cvalue">{{personaje.caracteristicas.Inte[0]}}</div>
           <div class="cvalue">{{personaje.caracteristicas.Inte[1]}}</div>
         </div>
       </ion-col>
       <ion-col size="3">
-        <div class="cgrid">
+        <div class="cgrid" (click)="editCaracteristica('Mem',personaje.caracteristicas.Mem)">
           <div class="cname">Mem</div>
           <div class="cvalue">{{personaje.caracteristicas.Mem[0]}}</div>
           <div class="cvalue">{{personaje.caracteristicas.Mem[1]}}</div>
         </div>
       </ion-col>
       <ion-col size="3">
-        <div class="cgrid">
+        <div class="cgrid" (click)="editCaracteristica('Per',personaje.caracteristicas.Per)">
           <div class="cname">Per</div>
           <div class="cvalue">{{personaje.caracteristicas.Per[0]}}</div>
           <div class="cvalue">{{personaje.caracteristicas.Per[1]}}</div>
@@ -92,32 +92,37 @@
     </ion-row>
     <ion-row>
       <ion-col size="3">
-        <div class="cgrid">
+        <div class="cgrid" (click)="editCaracteristica('Pod',personaje.caracteristicas.Pod)">
         <div class="cname">Pod</div>
         <div class="cvalue">{{personaje.caracteristicas.Pod[0]}}</div>
         <div class="cvalue">{{personaje.caracteristicas.Pod[1]}}</div>
         </div>
       </ion-col>
       <ion-col size="3">
-        <div class="cgrid">
+        <div class="cgrid" (click)="editCaracteristica('Vol',personaje.caracteristicas.Vol)">
           <div class="cname">Vol</div>
           <div class="cvalue">{{personaje.caracteristicas.Vol[0]}}</div>
           <div class="cvalue">{{personaje.caracteristicas.Vol[1]}}</div>
         </div>
       </ion-col>
       <ion-col size="3">
-        <div class="cgrid">
+        <div class="cgrid" (click)="editCaracteristica('Emp',personaje.caracteristicas.Emp)">
           <div class="cname">Emp</div>
           <div class="cvalue">{{personaje.caracteristicas.Emp[0]}}</div>
           <div class="cvalue">{{personaje.caracteristicas.Emp[1]}}</div>
         </div>
       </ion-col>
       <ion-col size="3">
-        <div class="cgrid">
+        <div class="cgrid" (click)="editCaracteristica('Apa',personaje.caracteristicas.Apa)">
           <div class="cname">Apa</div>
           <div class="cvalue">{{personaje.caracteristicas.Apa[0]}}</div>
           <div class="cvalue">{{personaje.caracteristicas.Apa[1]}}</div>
         </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button expand="full" (click)="guardarPersonaje()">Guardar</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
