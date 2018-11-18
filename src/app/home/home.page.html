@@ -10,7 +10,7 @@
   <ion-list lines="none">
     <ion-item *ngFor="let personaje of personajeService.personajes" (click)="goEdit([personaje.idPersonaje])">
       <ion-avatar slot="start">
-        <img [src] = "(personaje.avatar !== '') ? personaje.avatar : './../../assets/icon/avatar_default.jpg'">
+        <img [src] = "(personaje.avatar !== '') ? personaje.avatar : './../../assets/icon/avatar_default.png'">
       </ion-avatar>
       <div>
         <ion-label>{{ personaje.nombre }}</ion-label>
