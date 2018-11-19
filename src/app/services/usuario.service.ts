@@ -29,13 +29,13 @@ export class UsuarioService {
     }).catch(err =>  console.log('Error getting document', err));
   }
 
-  saveUsuario(u: Usuario) {
-    firebase.firestore().doc(`/habilidad/${u.idUsuario}`).set({
-      alias: (u.alias !== undefined) ? u.alias : '',
-      avatar: (u.avatar !== undefined) ? u.avatar : 0,
-      correo: u.correo,
-      idUsuario: u.idUsuario,
-      personaje: (u.personajes !== undefined) ? u.personajes : null,
+  saveUsuario() {
+    firebase.firestore().doc(`/habilidad/${this.usuario.idUsuario}`).set({
+      alias: (this.usuario.alias !== undefined) ? this.usuario.alias : '',
+      avatar: (this.usuario.avatar !== undefined) ? this.usuario.avatar : 0,
+      correo: this.usuario.correo,
+      idUsuario: this.usuario.idUsuario,
+      personaje: (this.usuario.personajes !== undefined) ? this.usuario.personajes : null,
     });
   }
 

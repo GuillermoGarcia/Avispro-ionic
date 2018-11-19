@@ -24,8 +24,8 @@ export class EditarPersonajePage implements OnInit {
       this.personaje = this.personajeService.getPersonaje(this.activatedRoute.snapshot.paramMap.get('id'));
       this.isNuevo = false;
       if (this.personaje.caracteristicas === null) {
-        this.personaje.caracteristicas = { Agi: [0, 0], Apa: [0, 0], Con: [0, 0], Des: [0, 0], Emp: [0, 0], For: [0, 0],
-                                          Inte: [0, 0], Mem: [0, 0], Ref: [0, 0], Per: [0, 0], Pod: [0, 0], Vol: [0, 0] };
+        this.personaje.caracteristicas = { Agi: [4, 1], Apa: [4, 1], Con: [4, 1], Des: [4, 1], Emp: [4, 1], For: [4, 1],
+                                          Inte: [4, 1], Mem: [4, 1], Ref: [4, 1], Per: [4, 1], Pod: [4, 1], Vol: [4, 1] };
       }
     } else {
       this.personaje = this.personajeService.nuevoPersonaje();
@@ -42,12 +42,42 @@ export class EditarPersonajePage implements OnInit {
   }
 
   async guardarPersonaje() {
-    this.personajeService.savePersonaje(this.personaje);
+    let msg = '';
+    if (this.validarPersonaje() === ''){
+      this.personajeService.savePersonaje(this.personaje, this.isNuevo);
+      msg = 'Personaje Guardado.';
+    } else {
+      msg = this.validarPersonaje();
+    }
     const alert = await this.alertController.create({
-      message: "Personaje Guardado.",
+      message: msg,
       buttons: [{ text: 'Ok', role: 'cancel' }]
     });
     await alert.present();
+
+  }
+
+  validaCaracteristica(c:number[]):boolean{
+    return (c[0] > ((this.personaje.nivel + 1) * 2)) && (c[0] < 40) && (c[1] > 1)&& (c[1] < 40);
+  }
+
+  validarPersonaje():string {
+    let msg = '';
+    if (this.personaje.nombre === ''){
+      msg += 'El nombre del Personaje es necesario.<br />';
+    }
+    if (this.personaje.raza === ''){
+      msg += 'La raza del Personaje es necesaria.<br />';
+    }
+    if (!(this.validaCaracteristica(this.personaje.caracteristicas.Agi) && this.validaCaracteristica(this.personaje.caracteristicas.Con) &&
+        this.validaCaracteristica(this.personaje.caracteristicas.Des) && this.validaCaracteristica(this.personaje.caracteristicas.Emp) &&
+        this.validaCaracteristica(this.personaje.caracteristicas.For) && this.validaCaracteristica(this.personaje.caracteristicas.Inte) &&
+        this.validaCaracteristica(this.personaje.caracteristicas.Mem) && this.validaCaracteristica(this.personaje.caracteristicas.Per) &&
+        this.validaCaracteristica(this.personaje.caracteristicas.Pod) && this.validaCaracteristica(this.personaje.caracteristicas.Ref) &&
+        this.validaCaracteristica(this.personaje.caracteristicas.Vol))) {
+      msg += 'Las Caracteristicas deben tener valores validos.'
+    }
+    return msg;
   }
 
 }
