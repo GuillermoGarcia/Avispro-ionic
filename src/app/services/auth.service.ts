@@ -14,6 +14,8 @@ export class AuthService {
 
   logoutUser(): Promise<void> { return firebase.auth().signOut(); }
 
+  resetPassword(email: string): Promise<void> { return firebase.auth().sendPasswordResetEmail(email); }
+
   signupUser(email: string, password: string, alias: String): Promise<any> {
     return firebase.auth().createUserWithEmailAndPassword(email, password)
     .then(newUserCredential => {
@@ -25,8 +27,16 @@ export class AuthService {
     });
   }
 
-  resetPassword(email: string): Promise<void> { return firebase.auth().sendPasswordResetEmail(email); }
-
+  updatePassword(op: string, np: string) {
+    firebase.auth().currentUser
+      .reauthenticateAndRetrieveDataWithCredential(firebase.auth.EmailAuthProvider.credential(firebase.auth().currentUser.email, op))
+      .then(() => {
+        firebase.auth().currentUser.updatePassword(np)
+        .then(() => console.log('Nueva Contraseña: ' + np))
+        .catch((error) => console.log('Error al cambiar de contraseña'));
+      })
+      .catch((error) => console.log('Error al cambiar de contraseña'));
+  }
 
 
 }

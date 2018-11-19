@@ -1,12 +1,15 @@
-ion-label { margin-left: 5px; }
-ion-input { padding: 5px; }
+ion-label { color: #ffffff !important; margin-left: 5px; }
+ion-input { color: #ffffff !important; padding: 5px; }
+ion-input { --ion-text-color-step-400: white !important; }
+ion-item { --ion-item-border-color: rgba(255, 255, 255, 0.5); }
+
 ion-title.title-md { height: 100%; left: 0; position: absolute; text-align: center; top: 0; width: 100%; }
 form { margin-bottom: 32px;
   button { margin-top: 20px !important; }
 }
 p { color: #d2d2d2; font-size: 0.8em; }
 .invalid { border-bottom: 1px solid #ff6153; }
-.error-message { min-height: 2.2rem;
+.error-message {  --inner-border-width: 0px; min-height: 2.2rem;
   ion-label { color: #ff6153; font-size: 60%; margin: 2px 0; }
   .item-inner { border-bottom: 0 !important; }
 }

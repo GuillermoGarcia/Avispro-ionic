@@ -4,6 +4,7 @@ import * as firebase from 'firebase/app';
 import 'firebase/firestore';
 
 import { Usuario } from '../classes/usuario';
+import { AuthService } from './auth.service';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class UsuarioService {
 
   public usuario: Usuario = {idUsuario: '', correo: '', alias: '', personajes: []};
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   loadUsuario(uid: string): Promise<any> {
     return firebase.firestore().doc(`/usuarios/${uid}`).get().then( doc => {
@@ -29,13 +30,17 @@ export class UsuarioService {
     }).catch(err =>  console.log('Error getting document', err));
   }
 
+  logout() { this.authService.logoutUser(); }
+
+  updatePassword(op: string, np: string) { this.authService.updatePassword(op, np); }
+
   saveUsuario() {
     firebase.firestore().doc(`/usuarios/${this.usuario.idUsuario}`).set({
       alias: (this.usuario.alias !== undefined) ? this.usuario.alias : '',
       avatar: (this.usuario.avatar !== undefined) ? this.usuario.avatar : 0,
       correo: this.usuario.correo,
       idUsuario: this.usuario.idUsuario,
-      personajes: (this.usuario.personajes !== undefined) ? this.usuario.personajes : null,
+      personajes: (this.usuario.personajes !== undefined) ? this.usuario.personajes : [],
     });
   }
 

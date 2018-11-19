@@ -9,7 +9,6 @@ import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
 
-import { Usuario } from '../classes/usuario';
 import { UsuarioService } from '../services/usuario.service';
 
 @Component({

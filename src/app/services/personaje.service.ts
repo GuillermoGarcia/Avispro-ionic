@@ -19,14 +19,14 @@ export class PersonajeService {
                Inte: [4, 1], Mem: [4, 1], Ref: [4, 1], Per: [4, 1], Pod: [4, 1], Vol: [4, 1]};
 
   deletePersonaje(id: number) {
-    firebase.firestore().collection("personajes").doc(this.personajes[id].idPersonaje).delete()
+    firebase.firestore().collection('personajes').doc(this.personajes[id].idPersonaje).delete()
       .then(() => {
         console.log(this.usuarioService.usuario);
-        this.usuarioService.usuario.personajes.splice(id,1);
+        this.usuarioService.usuario.personajes.splice(id, 1);
         console.log(this.usuarioService.usuario);
         this.usuarioService.saveUsuario();
     }).catch(function(error) {
-      console.error("Error removing document: ", error);
+      console.error('Error removing document: ', error);
     });
   }
 
@@ -53,28 +53,30 @@ export class PersonajeService {
   loadPersonaje(): Promise<any> {
     this.personajes.splice(0, this.personajes.length);
     return new Promise( (resolve, reject) => {
-      this.usuarioService.usuario.personajes.forEach((element, key) => {
-        firebase.firestore().doc(`/personajes/${element}`).get().then( doc => {
-          if (!doc.exists) {
-            console.log('No such document!');
-            resolve(false);
-          } else {
-            this.personajes.push({
-              avatar: doc.get('avatar'),
-              caracteristicas: doc.get('caracteristicas'),
-              cultura: doc.get('cultura'),
-              edad: doc.get('edad'),
-              habilidades: doc.get('habilidades'),
-              idPersonaje: element,
-              nivel: doc.get('nivel'),
-              nombre: doc.get('nombre'),
-              procedencia: doc.get('procedencia'),
-              raza: doc.get('raza')
-            });
-          }
-          if (this.usuarioService.usuario.personajes.length === (key + 1) ) { resolve(true); }
-        }).catch(err =>  console.log('Error getting document', err));
-      });
+      if (this.usuarioService.usuario.personajes.length > 0) {
+        this.usuarioService.usuario.personajes.forEach((element, key) => {
+          firebase.firestore().doc(`/personajes/${element}`).get().then( doc => {
+            if (!doc.exists) {
+              console.log('No such document!');
+              resolve(false);
+            } else {
+              this.personajes.push({
+                avatar: doc.get('avatar'),
+                caracteristicas: doc.get('caracteristicas'),
+                cultura: doc.get('cultura'),
+                edad: doc.get('edad'),
+                habilidades: doc.get('habilidades'),
+                idPersonaje: element,
+                nivel: doc.get('nivel'),
+                nombre: doc.get('nombre'),
+                procedencia: doc.get('procedencia'),
+                raza: doc.get('raza')
+              });
+            }
+            if (this.usuarioService.usuario.personajes.length === (key + 1) ) { resolve(true); }
+          }).catch(err =>  console.log('Error getting document', err));
+        });
+      }
     });
   }
 

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { UsuarioService } from '../services/usuario.service';
-import { AuthGuard } from '../services/usuario/auth.guard';
+
+import { AuthService } from '../services/auth.service';
+
 
 @Component({
   selector: 'app-editar-usuario',
@@ -10,18 +12,22 @@ import { AuthGuard } from '../services/usuario/auth.guard';
 })
 export class EditarUsuarioPage implements OnInit {
 
-  private datosValidos = false;
   private correoValido = true;
+  private actualContrasenaValida = true;
+  private nuevaContrasenaValida = true;
+  private repetidaContrasenaValida = true;
   private correo: string;
   private actualContrasena: string;
   private nuevaContrasena: string;
   private nuevaContrasenaR: string;
   private nick: string;
 
-  constructor(private modalController: ModalController, private authGuard: AuthGuard,
-    private usuarioService: UsuarioService) { }
+  constructor(private authService: AuthService, private modalController: ModalController, private usuarioService: UsuarioService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.correo = this.usuarioService.usuario.correo;
+    this.nick = this.usuarioService.usuario.alias;
+   }
 
   cancelar() { this.modalController.dismiss(null, 'cancel'); }
 
@@ -30,8 +36,27 @@ export class EditarUsuarioPage implements OnInit {
     this.correoValido = (this.correo.match(reg) !== null);
   }
 
-  saveUser(){
+  checkNewPass() {
+    this.nuevaContrasenaValida = (this.nuevaContrasena.length >= 6);
+  }
 
+  checkRepeatPass() {
+    this.repetidaContrasenaValida = (this.nuevaContrasena === this.nuevaContrasenaR);
+  }
+
+  saveUser() {
+    this.authService.loginUser(this.correo, this.actualContrasena).then((newUserCredential) => {
+      this.actualContrasenaValida = (newUserCredential.user.uid === this.usuarioService.usuario.idUsuario);
+    }, error => {
+      this.actualContrasenaValida = false;
+    });
+    if (this.actualContrasenaValida && this.correoValido && this.nuevaContrasenaValida && this.repetidaContrasenaValida) {
+      this.usuarioService.usuario.alias = this.nick;
+      this.usuarioService.usuario.correo = this.correo;
+      this.usuarioService.updatePassword(this.actualContrasena, this.nuevaContrasena);
+      this.usuarioService.saveUsuario();
+      this.modalController.dismiss();
+    }
   }
 
 }

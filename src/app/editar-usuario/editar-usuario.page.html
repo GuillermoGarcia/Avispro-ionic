@@ -11,17 +11,22 @@
     <ion-label position="floating">Contraseña Actual</ion-label>
     <ion-input type="password" [(ngModel)]="actualContrasena"></ion-input>
   </ion-item>
+  <ion-item class="error-message" *ngIf="!actualContrasenaValida">
+    <ion-label>Para cambiar la contraseña hace falta que introduzca la actual.</ion-label>
+  </ion-item>
   <ion-item>
     <ion-label position="floating">Nueva Contraseña</ion-label>
-    <ion-input type="password" [(ngModel)]="nuevaContrasena"></ion-input>
+    <ion-input type="password" [(ngModel)]="nuevaContrasena" (ionBlur)="checkNewPass()"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Repetir Nueva Contraseña</ion-label>
-    <ion-input type="password" [(ngModel)]="nuevaContrasenaR"></ion-input>
+    <ion-input type="password" [(ngModel)]="nuevaContrasenaR" (ionBlur)="checkRepeatPass()"></ion-input>
   </ion-item>
-  <ion-item class="error-message"
-    *ngIf="">
+  <ion-item class="error-message" *ngIf="!nuevaContrasenaValida">
     <ion-label>La contraseña debe tener al menos 6 caracteres.</ion-label>
+  </ion-item>
+  <ion-item class="error-message" *ngIf="!repetidaContrasenaValida">
+    <ion-label>Las dos contraseñas no coinciden.</ion-label>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Alias/Nick</ion-label>
@@ -32,15 +37,17 @@
     <ion-label>Es necesario introducir un alias/nick.</ion-label>
   </ion-item>
   <ion-grid>
-    <ion-col size="6">
-      <ion-button expand="block" (click)="saveUser()" [disabled]="!datosValidos">
-        Guardar Cambios
-      </ion-button>
-    </ion-col>
-    <ion-col size="6">
-        <ion-button expand="block" (click)="cancelar()">
-          Cancelar
+    <ion-row>
+      <ion-col size="6">
+        <ion-button expand="block" (click)="saveUser()" [disabled]="!(actualContrasenaValida&&correoValido&&nuevaContrasenaValida&&repetidaContrasenaValida)">
+          Guardar Cambios
         </ion-button>
       </ion-col>
+      <ion-col size="6">
+          <ion-button expand="block" color="danger" (click)="cancelar()">
+            Cancelar
+          </ion-button>
+        </ion-col>
+      </ion-row>
     </ion-grid>
 </ion-content>

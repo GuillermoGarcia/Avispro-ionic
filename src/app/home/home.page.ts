@@ -17,7 +17,7 @@ import { EditarUsuarioPage } from '../editar-usuario/editar-usuario.page';
 export class HomePage {
 
   constructor( private usuarioService: UsuarioService, private personajeService: PersonajeService,
-    private habilidadService: HabilidadService, private navController: NavController, 
+    private habilidadService: HabilidadService, private navController: NavController,
     private modalController: ModalController) { }
 
   async editarUsuario() {
@@ -35,5 +35,7 @@ export class HomePage {
   ionViewWillEnter() {
     this.personajeService.loadPersonaje();
   }
+
+  logout() { this.usuarioService.logout(); }
 
 }

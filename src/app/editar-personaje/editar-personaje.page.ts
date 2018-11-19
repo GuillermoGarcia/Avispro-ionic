@@ -23,8 +23,8 @@ export class EditarPersonajePage implements OnInit {
 
   ngOnInit() {
     if (this.activatedRoute.snapshot.paramMap.get('id')) {
-      this.id = parseInt(this.activatedRoute.snapshot.paramMap.get('id'));
-      this.personaje = this.personajeService.getPersonaje(''+this.id);
+      this.id = parseInt(this.activatedRoute.snapshot.paramMap.get('id'), 10);
+      this.personaje = this.personajeService.getPersonaje('' + this.id);
       this.isNuevo = false;
       if (this.personaje.caracteristicas === null) {
         this.personaje.caracteristicas = { Agi: [4, 1], Apa: [4, 1], Con: [4, 1], Des: [4, 1], Emp: [4, 1], For: [4, 1],
@@ -51,7 +51,7 @@ export class EditarPersonajePage implements OnInit {
 
   async guardarPersonaje() {
     let msg = '';
-    if (this.validarPersonaje() === ''){
+    if (this.validarPersonaje() === '') {
       this.personajeService.savePersonaje(this.personaje, this.isNuevo);
       msg = 'Personaje Guardado.';
     } else {
@@ -66,16 +66,16 @@ export class EditarPersonajePage implements OnInit {
 
   }
 
-  validaCaracteristica(c:number[]):boolean{
-    return (c[0] >= ((this.personaje.nivel + 1) * 2)) && (c[0] <= 40) && (c[1] >= 1)&& (c[1] <= 40);
+  validaCaracteristica(c: number[]): boolean {
+    return (c[0] >= ((this.personaje.nivel + 1) * 2)) && (c[0] <= 40) && (c[1] >= 1) && (c[1] <= 40);
   }
 
-  validarPersonaje():string {
+  validarPersonaje(): string {
     let msg = '';
-    if (this.personaje.nombre === ''){
+    if (this.personaje.nombre === '') {
       msg += 'El nombre del Personaje es necesario.<br />';
     }
-    if (this.personaje.raza === ''){
+    if (this.personaje.raza === '') {
       msg += 'La raza del Personaje es necesaria.<br />';
     }
     if (!(this.validaCaracteristica(this.personaje.caracteristicas.Agi) && this.validaCaracteristica(this.personaje.caracteristicas.Con) &&
@@ -84,7 +84,7 @@ export class EditarPersonajePage implements OnInit {
         this.validaCaracteristica(this.personaje.caracteristicas.Mem) && this.validaCaracteristica(this.personaje.caracteristicas.Per) &&
         this.validaCaracteristica(this.personaje.caracteristicas.Pod) && this.validaCaracteristica(this.personaje.caracteristicas.Ref) &&
         this.validaCaracteristica(this.personaje.caracteristicas.Vol))) {
-      msg += 'Las Caracteristicas deben tener valores validos.'
+      msg += 'Las Caracteristicas deben tener valores validos.';
     }
     return msg;
   }
