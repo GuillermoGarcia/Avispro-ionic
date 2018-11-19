@@ -3,12 +3,17 @@
     <ion-title>
       {{ usuarioService.usuario.alias }}
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="light" (click)="editarUsuario()">
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>  
   <ion-list lines="none">
-    <ion-item *ngFor="let personaje of personajeService.personajes" (click)="goEdit([personaje.idPersonaje])">
+    <ion-item *ngFor="let personaje of personajeService.personajes; let i = index" (click)="goEdit(i)">
       <ion-avatar slot="start">
         <img [src] = "(personaje.avatar !== '') ? personaje.avatar : './../../assets/icon/avatar_default.png'">
       </ion-avatar>

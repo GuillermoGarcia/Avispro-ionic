@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Personaje } from '../classes/personaje';
-import { PersonajeService } from '../services/personaje.service';
 import { ActivatedRoute } from '@angular/router';
 import { NavController, ModalController, AlertController } from '@ionic/angular';
+
+import { Personaje } from '../classes/personaje';
+import { PersonajeService } from '../services/personaje.service';
 import { EditarCaracteristicaPage } from '../editar-caracteristica/editar-caracteristica.page';
 
 @Component({
@@ -12,6 +13,7 @@ import { EditarCaracteristicaPage } from '../editar-caracteristica/editar-caract
 })
 export class EditarPersonajePage implements OnInit {
 
+  private id: number;
   private personaje: Personaje;
   private isNuevo: boolean;
 
@@ -21,7 +23,8 @@ export class EditarPersonajePage implements OnInit {
 
   ngOnInit() {
     if (this.activatedRoute.snapshot.paramMap.get('id')) {
-      this.personaje = this.personajeService.getPersonaje(this.activatedRoute.snapshot.paramMap.get('id'));
+      this.id = parseInt(this.activatedRoute.snapshot.paramMap.get('id'));
+      this.personaje = this.personajeService.getPersonaje(''+this.id);
       this.isNuevo = false;
       if (this.personaje.caracteristicas === null) {
         this.personaje.caracteristicas = { Agi: [4, 1], Apa: [4, 1], Con: [4, 1], Des: [4, 1], Emp: [4, 1], For: [4, 1],
@@ -41,6 +44,11 @@ export class EditarPersonajePage implements OnInit {
     await modal.present();
   }
 
+  eliminarPersonaje() {
+    this.personajeService.deletePersonaje(this.id);
+    this.navController.goBack();
+  }
+
   async guardarPersonaje() {
     let msg = '';
     if (this.validarPersonaje() === ''){
@@ -51,14 +59,15 @@ export class EditarPersonajePage implements OnInit {
     }
     const alert = await this.alertController.create({
       message: msg,
-      buttons: [{ text: 'Ok', role: 'cancel' }]
+      buttons: [{ text: 'Ok', role: 'cancel',
+        handler: () => { this.navController.goBack(); } }]
     });
     await alert.present();
 
   }
 
   validaCaracteristica(c:number[]):boolean{
-    return (c[0] > ((this.personaje.nivel + 1) * 2)) && (c[0] < 40) && (c[1] > 1)&& (c[1] < 40);
+    return (c[0] >= ((this.personaje.nivel + 1) * 2)) && (c[0] <= 40) && (c[1] >= 1)&& (c[1] <= 40);
   }
 
   validarPersonaje():string {

@@ -2,11 +2,11 @@
   <ion-text><h1>{{titulo}}</h1></ion-text>
   <ion-item>
     <ion-label>Valor Inicial:</ion-label>
-    <ion-input clearInput type="number" (ionChange)="validador(0)" [(ngModel)]="valores[0]" [disabled]="!isNuevo"></ion-input>
+    <ion-input clearInput type="number" (ionBlur)="validador(0)" [(ngModel)]="valores[0]" [disabled]="!isNuevo"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label>Valor Modificado:</ion-label>
-    <ion-input clearInput type="number" (ionChange)="validador(1)" [(ngModel)]="valores[1]"></ion-input>
+    <ion-input clearInput type="number" (ionBlur)="validador(1)" [(ngModel)]="valores[1]"></ion-input>
   </ion-item>
   <ion-button (click)="guardarCambios()">Cambiar</ion-button>
   <ion-button color="danger" (click)="cancelarCambios()">Cancelar</ion-button>

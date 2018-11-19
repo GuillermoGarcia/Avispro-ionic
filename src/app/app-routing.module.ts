@@ -12,6 +12,8 @@ const routes: Routes = [
     canActivate: [AuthGuard] },
   { path: 'editar-personaje/:id', loadChildren: './editar-personaje/editar-personaje.module#EditarPersonajePageModule',
     canActivate: [AuthGuard] },
+  // { path: 'editar-usuario', loadChildren: './editar-usuario/editar-usuario.module#EditarUsuarioPageModule' },
+
 
   ];
 

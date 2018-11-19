@@ -13,15 +13,20 @@ export class EditarCaracteristicaPage implements OnInit {
   nivel = 1;
   titulo = '';
   valores: number[];
+  valoresValidos: boolean;
 
   constructor(private navParams: NavParams, private modalController: ModalController, private alertController: AlertController) { }
 
   ngOnInit() {
-    this.caracteristica = this.navParams.get('caracteristicas');
+    this.caracteristica = this.navParams.get('caracteristica');
+    console.log('NavParams: ' + this.navParams.get('caracteristica'));
     this.valores = this.navParams.get('valores');
     this.nivel = this.navParams.get('nivel');
     this.isNuevo = this.navParams.get('nuevo');
     this.titulo = 'Editar ';
+    this.valoresValidos = true;
+    this.validador(0);
+    this.validador(1);
     switch (this.caracteristica) {
       case 'Agi': this.titulo += 'Agilidad'; break;
       case 'Apa': this.titulo += 'Apariencia'; break;
@@ -40,7 +45,11 @@ export class EditarCaracteristicaPage implements OnInit {
 
   cancelarCambios() { this.modalController.dismiss(null, 'cancel'); }
 
-  guardarCambios() { this.modalController.dismiss(this.valores, 'save'); }
+  guardarCambios() {
+    if (this.valoresValidos) {
+      this.modalController.dismiss(this.valores, 'save');
+    }
+}
 
   async validador(i: number) {
     let msg = '';
@@ -60,11 +69,14 @@ export class EditarCaracteristicaPage implements OnInit {
         msg += 'El valor ' + tipoValor + ' máximo es de 40.';
         this.valores[i] = 40;
       }
+      this.valoresValidos = false;
       alert = await this.alertController.create({
         message: msg,
         buttons: [{ text: 'Ok', role: 'cancel' }]
       });
       await alert.present();
+    } else {
+      this.valoresValidos = true;
     }
 
   }

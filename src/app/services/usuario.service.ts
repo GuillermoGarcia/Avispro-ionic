@@ -24,18 +24,18 @@ export class UsuarioService {
         this.usuario.alias = doc.get('alias');
         this.usuario.personajes = doc.get('personajes');
         this.usuario.avatar =  (doc.get('avatar') !== undefined) ? doc.get('avatar') : '';
-        // console.log('Document data:', this.usuario.personajes);
+        // console.log('Document User Data:', this.usuario);
       }
     }).catch(err =>  console.log('Error getting document', err));
   }
 
   saveUsuario() {
-    firebase.firestore().doc(`/habilidad/${this.usuario.idUsuario}`).set({
+    firebase.firestore().doc(`/usuarios/${this.usuario.idUsuario}`).set({
       alias: (this.usuario.alias !== undefined) ? this.usuario.alias : '',
       avatar: (this.usuario.avatar !== undefined) ? this.usuario.avatar : 0,
       correo: this.usuario.correo,
       idUsuario: this.usuario.idUsuario,
-      personaje: (this.usuario.personajes !== undefined) ? this.usuario.personajes : null,
+      personajes: (this.usuario.personajes !== undefined) ? this.usuario.personajes : null,
     });
   }
 

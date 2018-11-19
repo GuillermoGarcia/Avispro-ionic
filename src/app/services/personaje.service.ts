@@ -18,10 +18,22 @@ export class PersonajeService {
   private c = { Agi: [4, 1], Apa: [4, 1], Con: [4, 1], Des: [4, 1], Emp: [4, 1], For: [4, 1],
                Inte: [4, 1], Mem: [4, 1], Ref: [4, 1], Per: [4, 1], Pod: [4, 1], Vol: [4, 1]};
 
+  deletePersonaje(id: number) {
+    firebase.firestore().collection("personajes").doc(this.personajes[id].idPersonaje).delete()
+      .then(() => {
+        console.log(this.usuarioService.usuario);
+        this.usuarioService.usuario.personajes.splice(id,1);
+        console.log(this.usuarioService.usuario);
+        this.usuarioService.saveUsuario();
+    }).catch(function(error) {
+      console.error("Error removing document: ", error);
+    });
+  }
+
   nuevoPersonaje(): Personaje {
     const p = {
       avatar: '',
-      caracteristicas:  this.c,
+      caracteristicas: this.c,
       cultura: '',
       edad:  0,
       habilidades:  [],
@@ -35,7 +47,7 @@ export class PersonajeService {
   }
 
   getPersonaje(id: string): Personaje {
-    return this.personajes.find(p => p.idPersonaje === id);
+    return this.personajes.find(p => p.idPersonaje === this.usuarioService.usuario.personajes[id]);
   }
 
   loadPersonaje(): Promise<any> {
@@ -84,6 +96,19 @@ export class PersonajeService {
         this.usuarioService.usuario.personajes.push(docRef.id);
         this.usuarioService.saveUsuario();
       }).catch((err) => console.log('Error Guardando Nuevo Personaje, ' + err));
+    } else {
+      firebase.firestore().doc(`/personajes/${p.idPersonaje}`).set({
+        avatar: (p.avatar !== '') ? p.avatar : '',
+        caracteristicas: (p.caracteristicas !== undefined) ? p.caracteristicas : this.c,
+        cultura: (p.cultura !== '') ? p.cultura : '',
+        edad: (p.edad !== 0) ? p.edad : 0,
+        habilidades: (p.habilidades !== undefined) ? p.habilidades : [],
+        idPersonaje: p.idPersonaje,
+        nivel: (p.nivel !== 0) ? p.nivel : 0,
+        nombre: p.nombre,
+        procedencia: (p.procedencia !== '') ? p.procedencia : '',
+        raza: (p.raza !== '') ? p.raza : '',
+      });
     }
   }
 
