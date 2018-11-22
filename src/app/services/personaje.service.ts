@@ -12,11 +12,10 @@ import 'firebase/firestore';
 export class PersonajeService {
 
   public personajes: Personaje[] = [];
+  private c = { Agi: [4, 1], Apa: [4, 1], Con: [4, 1], Des: [4, 1], Emp: [4, 1], For: [4, 1],
+    Inte: [4, 1], Mem: [4, 1], Ref: [4, 1], Per: [4, 1], Pod: [4, 1], Vol: [4, 1]};
 
   constructor(private usuarioService: UsuarioService) { }
-
-  private c = { Agi: [4, 1], Apa: [4, 1], Con: [4, 1], Des: [4, 1], Emp: [4, 1], For: [4, 1],
-               Inte: [4, 1], Mem: [4, 1], Ref: [4, 1], Per: [4, 1], Pod: [4, 1], Vol: [4, 1]};
 
   deletePersonaje(id: number) {
     firebase.firestore().collection('personajes').doc(this.personajes[id].idPersonaje).delete()

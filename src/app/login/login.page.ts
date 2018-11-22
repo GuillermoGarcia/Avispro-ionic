@@ -42,18 +42,9 @@ export class LoginPage implements OnInit {
     } else {
       const email = loginForm.value.email;
       const password = loginForm.value.password;
+      this.loading = await this.loadingController.create();
       this.authService.loginUser(email, password).then((newUserCredential) => {
         this.usuarioService.loadUsuario(newUserCredential.user.uid);
-        /*firebase.firestore().doc(`/usuarios/${uid}`).get().then( doc => {
-          if (!doc.exists) {
-            console.log('No such document!');
-          } else {
-            this.usuario.idUsuario = doc.data().idUsuario;
-            this.usuario.correo = doc.data().correo;
-            this.usuario.alias = doc.data().alias;
-            console.log('Document data:', this.usuario);
-          }
-        }).catch(err =>  console.log('Error getting document', err));*/
         this.loading.dismiss().then(() => {
           this.router.navigateByUrl('home');
         });
@@ -66,7 +57,6 @@ export class LoginPage implements OnInit {
           await alert.present();
         });
       });
-      this.loading = await this.loadingController.create();
       await this.loading.present();
     }
   }

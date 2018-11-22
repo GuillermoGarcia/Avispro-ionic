@@ -23,7 +23,7 @@ export class UsuarioService {
         this.usuario.idUsuario = doc.get('idUsuario');
         this.usuario.correo = doc.get('correo');
         this.usuario.alias = doc.get('alias');
-        this.usuario.personajes = doc.get('personajes');
+        this.usuario.personajes = (doc.get('personajes') !== undefined) ? doc.get('personajes'):[];
         this.usuario.avatar =  (doc.get('avatar') !== undefined) ? doc.get('avatar') : '';
         // console.log('Document User Data:', this.usuario);
       }

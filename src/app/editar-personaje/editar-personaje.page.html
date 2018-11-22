@@ -11,7 +11,8 @@
 <ion-content padding>
   <ion-item>
     <ion-label>Nivel</ion-label>
-    <ion-input type="number" [(ngModel)]="personaje.nivel"></ion-input>
+    <ion-input type="number" [(ngModel)]="personaje.nivel"
+      (ionChange)="actualizarMinimoCaracteristicas()"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label>Nombre</ion-label>
