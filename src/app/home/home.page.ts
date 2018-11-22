@@ -5,6 +5,7 @@ import { UsuarioService } from '../services/usuario.service';
 import { PersonajeService } from '../services/personaje.service';
 import { HabilidadService } from '../services/habilidad.service';
 import { EditarUsuarioPage } from '../editar-usuario/editar-usuario.page';
+import { Personaje } from '../classes/personaje';
 
 // import * as h from '../../assets/avispro-b193e-habilidad-export.json';
 
@@ -16,9 +17,12 @@ import { EditarUsuarioPage } from '../editar-usuario/editar-usuario.page';
 })
 export class HomePage {
 
+  alias: string;
+  personajes: Personaje[];
+
   constructor( private usuarioService: UsuarioService, private personajeService: PersonajeService,
     private habilidadService: HabilidadService, private navController: NavController,
-    private modalController: ModalController) { }
+    private modalController: ModalController) { this.alias = usuarioService.usuario.alias; }
 
   async editarUsuario() {
     const modal = await this.modalController.create({
@@ -34,6 +38,7 @@ export class HomePage {
 
   ionViewWillEnter() {
     this.personajeService.loadPersonaje();
+    this.personajes = this.personajeService.personajes;
   }
 
   logout() { this.usuarioService.logout(); }

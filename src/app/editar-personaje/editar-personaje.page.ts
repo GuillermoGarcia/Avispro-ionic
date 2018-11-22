@@ -14,8 +14,8 @@ import { EditarCaracteristicaPage } from '../editar-caracteristica/editar-caract
 export class EditarPersonajePage implements OnInit {
 
   private id: number;
-  private personaje: Personaje;
-  private isNuevo: boolean;  
+  personaje: Personaje;
+  isNuevo: boolean;
 
   constructor(private personajeService: PersonajeService, private activatedRoute: ActivatedRoute,
     private navController: NavController, private modalController: ModalController,
@@ -28,9 +28,8 @@ export class EditarPersonajePage implements OnInit {
       this.personaje = this.personajeService.getPersonaje('' + this.id);
       this.isNuevo = false;
       if (this.personaje.caracteristicas === null) {
-        this.personaje.caracteristicas =
-          { Agi: [4, 1], Apa: [4, 1], Con: [4, 1], Des: [4, 1], Emp: [4, 1], For: [4, 1],
-           Inte: [4, 1], Mem: [4, 1], Ref: [4, 1], Per: [4, 1], Pod: [4, 1], Vol: [4, 1] };
+        this.personaje.caracteristicas = { Agi: [4, 1], Apa: [4, 1], Con: [4, 1], Des: [4, 1], Emp: [4, 1],
+          For: [4, 1], Inte: [4, 1], Mem: [4, 1], Ref: [4, 1], Per: [4, 1], Pod: [4, 1], Vol: [4, 1] };
       }
     } else {
       this.personaje = this.personajeService.nuevoPersonaje();
@@ -38,12 +37,11 @@ export class EditarPersonajePage implements OnInit {
     }
   }
 
-  actualizarMinimoCaracteristicas(){
-    if (this.isNuevo) {      
+  actualizarMinimoCaracteristicas() {
+    if (this.isNuevo) {
       const min = (this.personaje.nivel + 1) * 2;
-      this.personaje.caracteristicas =
-        { Agi: [min, 1], Apa: [min, 1], Con: [min, 1], Des: [min, 1], Emp: [min, 1], For: [min, 1],
-         Inte: [min, 1], Mem: [min, 1], Ref: [min, 1], Per: [min, 1], Pod: [min, 1], Vol: [min, 1] };
+      this.personaje.caracteristicas = { Agi: [min, 1], Apa: [min, 1], Con: [min, 1], Des: [min, 1], Emp: [min, 1],
+        For: [min, 1], Inte: [min, 1], Mem: [min, 1], Ref: [min, 1], Per: [min, 1], Pod: [min, 1], Vol: [min, 1] };
     }
   }
 

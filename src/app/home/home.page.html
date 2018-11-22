@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      {{ usuarioService.usuario.alias }}
+      {{ alias }}
     </ion-title>
     <ion-buttons slot="end">
       <ion-button color="light" (click)="editarUsuario()">
@@ -16,7 +16,7 @@
 
 <ion-content padding>  
   <ion-list lines="none">
-    <ion-item *ngFor="let personaje of personajeService.personajes; let i = index" (click)="goEdit(i)">
+    <ion-item *ngFor="let personaje of personajes; let i = index" (click)="goEdit(i)">
       <ion-avatar slot="start">
         <img [src] = "(personaje.avatar !== '') ? personaje.avatar : './../../assets/icon/avatar_default.png'">
       </ion-avatar>

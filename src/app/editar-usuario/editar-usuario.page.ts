@@ -12,15 +12,15 @@ import { AuthService } from '../services/auth.service';
 })
 export class EditarUsuarioPage implements OnInit {
 
-  private correoValido = true;
-  private actualContrasenaValida = true;
-  private nuevaContrasenaValida = true;
-  private repetidaContrasenaValida = true;
-  private correo: string;
-  private actualContrasena: string;
-  private nuevaContrasena: string;
-  private nuevaContrasenaR: string;
-  private nick: string;
+  correoValido = true;
+  actualContrasenaValida = true;
+  nuevaContrasenaValida = true;
+  repetidaContrasenaValida = true;
+  correo: string;
+  actualContrasena: string;
+  nuevaContrasena: string;
+  nuevaContrasenaR: string;
+  nick: string;
 
   constructor(private authService: AuthService, private modalController: ModalController, private usuarioService: UsuarioService) { }
 
