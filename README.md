@@ -31,7 +31,7 @@ Una vez los usuarios se identifican, acceden a sus lista de personajes, desde aq
 
 ## Edición Usuario
 
-En la parte superior está el botón de Ajustes donde el usuario podrá editar su *Contraseña* y su *Alias*
+En la parte superior está el botón de Ajustes![](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/ajustes.jpg) donde el usuario podrá editar su *Contraseña* y su *Alias*
 
 ![Edición Usuario Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/Usuario.png)
 
