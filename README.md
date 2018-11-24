@@ -21,7 +21,7 @@ Los usuarios se deben identificar con el correo y la contraseña proporcionados 
 ## Edición Usuario
 
 En la parte superior está el botón de Ajustes donde el usuario podrá editar su *Contraseña* y su *Alias*
-![Edición Usuario Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/edicion.jpg)
+![Edición Usuario Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/usuario.jpg)
 
 
 # Personajes
@@ -49,3 +49,5 @@ Hay 12 características:
 Haciendo clic sobre cada característica, se abre un modal donde cambiar los valores Inicial y Modificado.
  - **Valor Inicial**: En la creación del personaje es el único momento donde es posible modificar el valor inicial de las características, siendo el mínimo de este valor inicial el doble del nivel mas uno del personaje, este valor sera el obtenido por el jugador al tirar los dados.
  - **Valor Modificado**: El valor modificado por raza, taras y ventajas tras la creación del personaje.
+
+![Edición Personaje Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/edicion.jpg)
