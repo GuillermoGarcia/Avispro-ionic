@@ -10,23 +10,30 @@ Tanto el registro como la identificación se realiza a través de Firebase Authe
 
 ## Registro
 
-Los usuarios deberán proporcionar, correo electronico, contraseña y Alias.
-![Registro Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/registro.jpg)
+Los usuarios deberán proporcionar, correo electrónico, contraseña y Alias.
+
+![Registro Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/Registro.png)
 
 ## Identificación
 
 Los usuarios se deben identificar con el correo y la contraseña proporcionados en el registro
-![Login Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/login.jpg)
 
-## Edición Usuario
+![Login Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/Login.png)
 
-En la parte superior está el botón de Ajustes donde el usuario podrá editar su *Contraseña* y su *Alias*
-![Edición Usuario Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/usuario.jpg)
+
 
 
 # Personajes
 
 Una vez los usuarios se identifican, acceden a sus lista de personajes, desde aquí pueden entrar en cada uno de los personajes o bien crear una nuevo, desde el botón inferior *Nuevo Personaje*.
+
+![Lista Personajes Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/Personaje.png)
+
+## Edición Usuario
+
+En la parte superior está el botón de Ajustes donde el usuario podrá editar su *Contraseña* y su *Alias*
+
+![Edición Usuario Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/Usuario.png)
 
 ## Creación y Edición de Personaje
 
@@ -50,4 +57,4 @@ Haciendo clic sobre cada característica, se abre un modal donde cambiar los val
  - **Valor Inicial**: En la creación del personaje es el único momento donde es posible modificar el valor inicial de las características, siendo el mínimo de este valor inicial el doble del nivel mas uno del personaje, este valor sera el obtenido por el jugador al tirar los dados.
  - **Valor Modificado**: El valor modificado por raza, taras y ventajas tras la creación del personaje.
 
-![Edición Personaje Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/edicion.jpg)
+![Edición Personaje Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/Edicion.png)
