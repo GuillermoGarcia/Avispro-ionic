@@ -25,13 +25,13 @@ Los usuarios se deben identificar con el correo y la contraseña proporcionados 
 
 # Personajes
 
-Una vez los usuarios se identifican, acceden a sus lista de personajes, desde aquí pueden entrar en cada uno de los personajes o bien crear una nuevo, desde el botón inferior *Nuevo Personaje*.
+Una vez los usuarios se identifican, acceden a sus lista de personajes, desde aquí pueden entrar en cada uno de los personajes o bien crear una nuevo, desde el botón inferior *Nuevo Personaje*. En la parte superior está el botón de Salir ![](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/salir.jpg) dejar de estar identificado con el actual usuario.
 
 ![Lista Personajes Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/Personajes.png)
 
 ## Edición Usuario
 
-En la parte superior está el botón de Ajustes![](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/ajustes.jpg) donde el usuario podrá editar su *Contraseña* y su *Alias*
+En la parte superior está el botón de Ajustes ![](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/ajustes.jpg) donde el usuario podrá editar su *Contraseña* y su *Alias*
 
 ![Edición Usuario Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/Usuario.png)
 
