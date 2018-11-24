@@ -27,7 +27,7 @@ Los usuarios se deben identificar con el correo y la contraseña proporcionados 
 
 Una vez los usuarios se identifican, acceden a sus lista de personajes, desde aquí pueden entrar en cada uno de los personajes o bien crear una nuevo, desde el botón inferior *Nuevo Personaje*.
 
-![Lista Personajes Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/Personaje.png)
+![Lista Personajes Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/Personajes.png)
 
 ## Edición Usuario
 
