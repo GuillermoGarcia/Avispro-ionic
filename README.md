@@ -1,26 +1,34 @@
 ![Logo Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/avispro.png)
 # *A*sistente *VIS*ual de *P*ersonajes de *R*ol *O*nline
 
-**AVISPRO** es una aplicacion para la gestion de Fichas de Personajes de Rol, ofreciendo a los jugadores y directores de juego, la oportunidad de seguir avanzando en sus partidas incluso cuando no pueden quedar en persona. 
+**AVISPRO** es una aplicación para la gestión de Fichas de Personajes de Rol, ofreciendo a los jugadores y directores de juego, la oportunidad de seguir avanzando en sus partidas incluso cuando no pueden quedar en persona. 
 
 
 # Usuarios
 
-Tanto el registro como la identificacion se realiza a traves de Firebase Authentication.
+Tanto el registro como la identificación se realiza a través de Firebase Authentication.
 
 ## Registro
 
-Los usuarios deberan proporcionar, correo electronico, contraseña y Alias.
+Los usuarios deberán proporcionar, correo electronico, contraseña y Alias.
+![Registro Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/registro.jpg)
 
-## Identificacion
+## Identificación
 
 Los usuarios se deben identificar con el correo y la contraseña proporcionados en el registro
+![Login Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/login.jpg)
+
+## Edición Usuario
+
+En la parte superior está el botón de Ajustes donde el usuario podrá editar su *Contraseña* y su *Alias*
+![Edición Usuario Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/edicion.jpg)
+
 
 # Personajes
 
-Una vez los usuarios se identifican, acceden a sus lista de personajes, desde aqui pueden entrar en cada uno de los personajes o bien crear una nuevo, desde el boton inferior *Nuevo Personaje,* ademas en la parte superior estan el boton de Ajustes donde el usuario podra cambiar su *Contraseña* y su *Alias*. Junto al boton de Ajustes esta el boton de Desidentificarse.
+Una vez los usuarios se identifican, acceden a sus lista de personajes, desde aquí pueden entrar en cada uno de los personajes o bien crear una nuevo, desde el botón inferior *Nuevo Personaje*.
 
-## Creacion y Edicion de Personaje
+## Creación y Edición de Personaje
 
  - **Nivel**:  Nivel inicial con el que se crea el personaje.
  - **Nombre**: Nombre del Personaje.
@@ -29,8 +37,8 @@ Una vez los usuarios se identifican, acceden a sus lista de personajes, desde aq
  - **Procedencia**: Lugar de origen del Personaje se ha criado.
  - **Edad**: Edad Actual del Personaje.
 
-### Caracteristicas
-Hay 12 caracteristicas:
+### Características
+Hay 12 características:
 |||||
 |--|--|--|--|
 | Fortaleza (For) | Constitución (Con)  | Agilidad (Agi) | Destreza (Des)   |
@@ -38,6 +46,6 @@ Hay 12 caracteristicas:
 | Poder (Pod)     | Voluntad (Vol)  | Empatía (Emp)  | Apariencia (Apa) |
 |||||
 
-Haciendo click sobre cada caracteristica, se abre un modal donde cambiar los valores Inicial y Modificado.
- - **Valor Inicial**: En la creacion del personaje es el unico momento donde es posible modificar el valor inicial de las caracteristicas, siendo el minimo de este valor inicial el doble del nivel mas uno del personaje, este valor sera el obtenido por el jugador al tirar los dados.
- - **Valor Modificado**: El valor modificado por raza, taras y ventajas tras la creacion del personaje.
+Haciendo clic sobre cada característica, se abre un modal donde cambiar los valores Inicial y Modificado.
+ - **Valor Inicial**: En la creación del personaje es el único momento donde es posible modificar el valor inicial de las características, siendo el mínimo de este valor inicial el doble del nivel mas uno del personaje, este valor sera el obtenido por el jugador al tirar los dados.
+ - **Valor Modificado**: El valor modificado por raza, taras y ventajas tras la creación del personaje.
