@@ -1,4 +1,4 @@
-(https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/avispro.png)
+![Logo Avispro](https://github.com/GuillermoGarcia/imagenes-para-readmes/blob/master/avispro.png)
 # *A*sistente *VIS*ual de *P*ersonajes de *R*ol *O*nline
 
 **AVISPRO** es una aplicacion para la gestion de Fichas de Personajes de Rol, ofreciendo a los jugadores y directores de juego, la oportunidad de seguir avanzando en sus partidas incluso cuando no pueden quedar en persona. 
